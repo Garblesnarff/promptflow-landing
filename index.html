@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PromptFlow — Premium AI Prompts & Notion Templates</title>
+  <meta name="description" content="Premium AI prompt packs and Notion templates for freelancers, marketers, and business owners. Instant download. Works with ChatGPT, Claude, and Gemini." />
+  <meta property="og:title" content="PromptFlow — Premium AI Prompts & Notion Templates" />
+  <meta property="og:description" content="Stop spending hours on work AI can do in minutes. 15 premium digital products for freelancers and business owners." />
+  <meta property="og:type" content="website" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand: #5046e5;
+      --brand-dark: #3730a3;
+      --brand-light: #ede9fe;
+      --text: #111827;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --surface: #f9fafb;
+      --border: #e5e7eb;
+      --radius: 12px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--brand);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    .logo span { color: var(--text); }
+    .nav-cta {
+      background: var(--brand);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--brand-dark); }
+
+    /* HERO */
+    .hero {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--brand-light);
+      color: var(--brand);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 28px;
+      letter-spacing: 0.3px;
+    }
+    .badge::before { content: "✦"; font-size: 0.7rem; }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -1.5px;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+    h1 em {
+      font-style: normal;
+      color: var(--brand);
+    }
+    .hero-sub {
+      font-size: 1.18rem;
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+
+    /* EMAIL FORM */
+    .email-form {
+      display: flex;
+      gap: 10px;
+      max-width: 480px;
+      margin: 0 auto 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .email-form input[type="email"] {
+      flex: 1;
+      min-width: 220px;
+      padding: 14px 18px;
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .email-form input[type="email"]:focus {
+      border-color: var(--brand);
+    }
+    .email-form button {
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .email-form button:hover { background: var(--brand-dark); }
+    .form-note {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    /* SOCIAL PROOF */
+    .trust-bar {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      padding: 40px 24px;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 0 24px;
+    }
+    .trust-item {
+      text-align: center;
+    }
+    .trust-item .num {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--brand);
+      display: block;
+    }
+    .trust-item .label {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* PRODUCTS */
+    .products-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+    .section-label {
+      text-align: center;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 900;
+      letter-spacing: -0.8px;
+      margin-bottom: 12px;
+    }
+    .section-sub {
+      text-align: center;
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 540px;
+      margin: 0 auto 52px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .product-card:hover {
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+    .product-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+    .tag-prompts { background: #dbeafe; color: #1d4ed8; }
+    .tag-notion { background: #dcfce7; color: #166534; }
+    .tag-guide { background: #fef3c7; color: #92400e; }
+    .tag-bundle { background: var(--brand-light); color: var(--brand); }
+    .product-name {
+      font-size: 1.1rem;
+      font-weight: 800;
+      line-height: 1.3;
+      color: var(--text);
+    }
+    .product-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .product-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+    .price {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: var(--text);
+    }
+    .compare-price {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-decoration: line-through;
+      margin-left: 6px;
+      font-weight: 400;
+    }
+    .buy-btn {
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .buy-btn:hover { background: var(--brand-dark); }
+    .coming-soon-btn {
+      background: var(--border);
+      color: var(--muted);
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: not-allowed;
+    }
+
+    /* BUNDLE HIGHLIGHT */
+    .bundle-card {
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+      color: #fff;
+      border: none;
+    }
+    .bundle-card .product-name,
+    .bundle-card .product-desc { color: rgba(255,255,255,0.95); }
+    .bundle-card .product-desc { color: rgba(255,255,255,0.8); }
+    .bundle-card .product-footer {
+      border-top-color: rgba(255,255,255,0.2);
+    }
+    .bundle-card .price { color: #fff; }
+    .bundle-card .compare-price { color: rgba(255,255,255,0.6); }
+    .bundle-buy-btn {
+      background: #fff;
+      color: var(--brand);
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 0.88rem;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .bundle-buy-btn:hover { opacity: 0.9; }
+    .savings-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+    .bundle-includes {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.8;
+    }
+
+    /* WHY US */
+    .why-section {
+      background: var(--surface);
+      padding: 80px 24px;
+    }
+    .why-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .feature {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .feature-icon {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+    .feature h3 {
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .feature p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* CTA SECTION */
+    .cta-section {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 100px 24px;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+    .cta-section p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--text); }
+    .footer-links { display: flex; gap: 24px; justify-content: center; margin-top: 8px; flex-wrap: wrap; }
+
+    @media (max-width: 600px) {
+      h1 { letter-spacing: -0.8px; }
+      .trust-bar { gap: 20px; }
+      .email-form { flex-direction: column; align-items: stretch; }
+      .email-form input[type="email"] { min-width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="logo">Prompt<span>Flow</span></a>
+  <a href="#products" class="nav-cta">See Products →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="badge">AI Prompts & Notion Templates — Instant Download</div>
+  <h1>Stop Spending Hours on Work <em>AI Can Do in Minutes</em></h1>
+  <p class="hero-sub">Premium prompt packs and Notion templates for freelancers and business owners who want to work smarter — not harder.</p>
+
+  <!-- EMAIL CAPTURE — Netlify Forms: works automatically when deployed to Netlify (netlify.com/drop) -->
+  <form class="email-form" name="early-access" method="POST" data-netlify="true" action="/thank-you">
+    <input type="hidden" name="form-name" value="early-access" />
+    <input type="email" name="email" placeholder="Your email address" required />
+    <button type="submit">Get Early Access</button>
+  </form>
+  <p class="form-note">Join the early access list. First 100 subscribers get 20% off at launch.</p>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">
+    <span class="num">15</span>
+    <span class="label">Premium Products</span>
+  </div>
+  <div class="trust-item">
+    <span class="num">$0</span>
+    <span class="label">Startup Cost to You</span>
+  </div>
+  <div class="trust-item">
+    <span class="num">Instant</span>
+    <span class="label">Digital Delivery</span>
+  </div>
+  <div class="trust-item">
+    <span class="num">100%</span>
+    <span class="label">Lifetime Access</span>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="products-section" id="products">
+  <p class="section-label">Product Catalog</p>
+  <h2 class="section-title">Everything You Need to Work With AI</h2>
+  <p class="section-sub">Curated prompt packs and Notion systems built for real business use cases.</p>
+
+  <div class="product-grid">
+
+    <!-- BUNDLE — featured first -->
+    <div class="product-card bundle-card">
+      <span class="savings-badge">Best Value — Save $92</span>
+      <div class="product-name">Complete AI Business Toolkit Bundle</div>
+      <div class="bundle-includes">
+        Includes 7 products:<br>
+        ChatGPT Business Prompts 500 · Notion CRM + Client Tracker · Notion Freelancer OS · Notion Productivity Dashboard · AI Client Onboarding Template Pack · 90-Day AI Content Calendar Bundle · Small Business Automation Playbook
+      </div>
+      <div class="product-footer">
+        <div>
+          <span class="price">$67</span>
+          <span class="compare-price">$159</span>
+        </div>
+        <a href="#" class="bundle-buy-btn coming-soon">Coming Soon</a>
+      </div>
+    </div>
+
+    <!-- ChatGPT Prompt Packs -->
+    <div class="product-card">
+      <span class="product-tag tag-prompts">Prompt Pack</span>
+      <div class="product-name">ChatGPT Business Prompts 500</div>
+      <div class="product-desc">500 battle-tested prompts covering every major business function. The only prompt library a business owner needs.</div>
+      <div class="product-footer">
+        <div><span class="price">$27</span><span class="compare-price">$47</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <span class="product-tag tag-prompts">Prompt Pack</span>
+      <div class="product-name">ChatGPT Prompts for Marketers</div>
+      <div class="product-desc">70 expert prompts for marketing pros. Ads, email, social media, SEO, and strategy — done in minutes.</div>
+      <div class="product-footer">
+        <div><span class="price">$17</span><span class="compare-price">$29</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <span class="product-tag tag-prompts">Prompt Pack</span>
+      <div class="product-name">AI Copywriting Masterpack</div>
+      <div class="product-desc">45 structured copywriting prompts using AIDA, PAS, and FAB frameworks. Stop settling for generic AI copy.</div>
+      <div class="product-footer">
+        <div><span class="price">$22</span><span class="compare-price">$37</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <span class="product-tag tag-prompts">Prompt Pack</span>
+      <div class="product-name">ChatGPT Prompts for Writers</div>
+      <div class="product-desc">Writer's block isn't a creativity problem — it's a starting problem. 44 prompts organized by the exact situation blocking you.</div>
+      <div class="product-footer">
+        <div><span class="price">$17</span><span class="compare-price">$29</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <span class="product-tag tag-prompts">Prompt Pack</span>
+      <div class="product-name">Social Media AI Prompts Pack</div>
+      <div class="product-desc">35 prompts for creating scroll-stopping social content across Instagram, LinkedIn, Twitter, and TikTok.</div>
+      <div class="product-footer">
+        <div><span class="price">$17</span><span class="compare-price">$29</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <span class="product-tag tag-prompts">Prompt Pack</span>
+      <div class="product-name">AI Prompt Pack for Real Estate</div>
+      <div class="product-desc">Prompts for listings, client communication, market analysis, and content — built for real estate professionals.</div>
+      <div class="product-footer">
+        <div><span class="price">$22</span><span class="compare-price">$37</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <span class="product-tag tag-prompts">Prompt Pack</span>
+      <div class="product-name">ChatGPT Prompts for E-Commerce</div>
+      <div class="product-desc">Product descriptions, ad copy, email campaigns, and customer service responses — all tailored for e-commerce.</div>
+      <div class="product-footer">
+        <div><span class="price">$22</span><span class="compare-price">$37</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+    <!-- Notion Templates -->
+    <div class="product-card">
+      <span class="product-tag tag-notion">Notion Template</span>
+      <div class="product-name">Notion Freelancer OS</div>
+      <div class="product-desc">Complete business operating system for freelancers. CRM, project tracker, invoices, and proposals in one Notion workspace.</div>
+      <div class="product-footer">
+        <div><span class="price">$27</span><span class="compare-price">$47</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <span class="product-tag tag-notion">Notion Template</span>
+      <div class="product-name">Notion Productivity Dashboard</div>
+      <div class="product-desc">Most productivity systems are more work than the work. This one isn't. One place for tasks, goals, habits, and projects.</div>
+      <div class="product-footer">
+        <div><span class="price">$17</span><span class="compare-price">$29</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <span class="product-tag tag-notion">Notion Template</span>
+      <div class="product-name">Notion Second Brain 2026</div>
+      <div class="product-desc">Complete PKM system inspired by Tiago Forte's Building a Second Brain. Rebuilt for the AI era. Set up in 30 minutes.</div>
+      <div class="product-footer">
+        <div><span class="price">$17</span><span class="compare-price">$29</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <span class="product-tag tag-notion">Notion Template</span>
+      <div class="product-name">Notion CRM + Client Tracker</div>
+      <div class="product-desc">A CRM built for people who don't want a CRM. Track every client, deal, and follow-up without enterprise complexity.</div>
+      <div class="product-footer">
+        <div><span class="price">$17</span><span class="compare-price">$29</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+    <!-- Guides & Bundles -->
+    <div class="product-card">
+      <span class="product-tag tag-guide">Workflow Guide</span>
+      <div class="product-name">Small Business Automation Playbook</div>
+      <div class="product-desc">12 workflows that eliminate the most time-consuming parts of running a small business using AI and automation tools.</div>
+      <div class="product-footer">
+        <div><span class="price">$27</span><span class="compare-price">$47</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <span class="product-tag tag-guide">Workflow Guide</span>
+      <div class="product-name">AI Client Onboarding Template Pack</div>
+      <div class="product-desc">6 client onboarding templates that make you look professional from Day 1. Welcome kit, intake form, kickoff agenda, and more.</div>
+      <div class="product-footer">
+        <div><span class="price">$22</span><span class="compare-price">$37</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <span class="product-tag tag-guide">Content System</span>
+      <div class="product-name">90-Day AI Content Calendar Bundle</div>
+      <div class="product-desc">3 months of content ideas, hooks, and posting prompts pre-built. Stop staring at a blank content calendar.</div>
+      <div class="product-footer">
+        <div><span class="price">$22</span><span class="compare-price">$37</span></div>
+        <a href="#" class="buy-btn coming-soon-btn">Coming Soon</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-section">
+  <div class="why-inner">
+    <p class="section-label" style="text-align:center">Why PromptFlow</p>
+    <h2 class="section-title" style="text-align:center; max-width:560px; margin:0 auto">Built for People Who Use AI Every Day</h2>
+
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>Instant Download</h3>
+        <p>Every product delivers immediately after purchase. No waiting, no shipping, no friction.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔄</div>
+        <h3>Lifetime Updates</h3>
+        <p>As AI models improve, so do our prompts. Every update is free for existing buyers.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🧠</div>
+        <h3>Works With Any AI</h3>
+        <p>All prompts are tested with ChatGPT 4, Claude, and Gemini. Use whatever you prefer.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎯</div>
+        <h3>Real Use Cases</h3>
+        <p>Not generic prompts. Each pack is built around specific tasks real professionals need to complete.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📦</div>
+        <h3>Ready to Use</h3>
+        <p>No setup required for prompts. Notion templates set up in 30 minutes with included guides.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💬</div>
+        <h3>Backed by Support</h3>
+        <p>Have a question? We respond to every email. Real humans, not bots.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-section">
+  <h2>Be First in Line When We Launch</h2>
+  <p>Join the early access list and get 20% off everything at launch — plus a free AI prompt starter pack delivered immediately.</p>
+  <form class="email-form" name="early-access-footer" method="POST" data-netlify="true" action="/thank-you" style="justify-content: center">
+    <input type="hidden" name="form-name" value="early-access-footer" />
+    <input type="email" name="email" placeholder="Your email address" required />
+    <button type="submit">Notify Me at Launch</button>
+  </form>
+  <p class="form-note" style="margin-top: 12px">No spam. Unsubscribe anytime.</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 PromptFlow. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="mailto:hello@promptflow.co">Contact</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Refund Policy</a>
+  </div>
+</footer>
+
+<!-- DEPLOY IN 60 SECONDS (no account required):
+  1. Go to: netlify.com/drop
+  2. Drag the entire "landing-page" folder onto the page
+  3. Netlify gives you a live URL immediately (e.g., amazing-name-123456.netlify.app)
+  4. Email submissions go to printpulsecreations2023@gmail.com automatically
+
+  AFTER GUMROAD IS LIVE:
+  - Replace all "coming-soon-btn" buttons with actual Gumroad product links
+  - Change button class from "coming-soon-btn" to "buy-btn" to restore purple color
+-->
+
+</body>
+</html>
