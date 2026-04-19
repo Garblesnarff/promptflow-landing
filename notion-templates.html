@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Notion Templates for Freelancers in 2026 (Free + Paid)</title>
+  <meta name="description" content="The best Notion templates for freelancers: CRM, project tracker, client onboarding, productivity dashboard, and second brain. Free setup guides included." />
+  <meta property="og:title" content="Best Notion Templates for Freelancers (2026 Guide)" />
+  <meta property="og:description" content="Stop building your Notion system from scratch. These templates are designed for freelancers who bill by the hour and manage multiple clients." />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://garblesnarff.github.io/promptflow-landing/notion-templates.html" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #6c47ff;
+      --brand-dark: #5535e0;
+      --text: #1a1a2e;
+      --muted: #6b7280;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --notion: #000000;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--text); background: var(--bg); line-height: 1.7; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav { background: white; border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-weight: 800; font-size: 1.1rem; color: var(--brand); letter-spacing: -0.5px; }
+    .nav-cta { background: var(--brand); color: white; padding: 8px 18px; border-radius: 8px; font-size: 0.85rem; font-weight: 600; }
+    .nav-cta:hover { background: var(--brand-dark); text-decoration: none; }
+
+    .article-wrap { max-width: 740px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    .breadcrumb { font-size: 0.82rem; color: var(--muted); margin-bottom: 24px; }
+    .breadcrumb a { color: var(--muted); }
+
+    h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.5px; margin-bottom: 16px; }
+    .meta { color: var(--muted); font-size: 0.88rem; margin-bottom: 32px; display: flex; gap: 16px; flex-wrap: wrap; }
+    .meta span::before { content: "· "; }
+    .meta span:first-child::before { content: ""; }
+
+    .intro { font-size: 1.05rem; color: #374151; margin-bottom: 36px; padding: 20px 24px; background: #f0ebff; border-left: 4px solid var(--brand); border-radius: 0 8px 8px 0; }
+
+    h2 { font-size: 1.3rem; font-weight: 800; margin: 44px 0 8px; }
+    h3 { font-size: 1rem; font-weight: 700; color: var(--muted); margin-bottom: 16px; }
+
+    .template-card { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 24px; }
+    .template-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 12px; flex-wrap: wrap; }
+    .template-title { font-size: 1.1rem; font-weight: 700; }
+    .template-badge { font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
+    .badge-free { background: #d1fae5; color: #065f46; }
+    .badge-paid { background: #ede9fe; color: #5b21b6; }
+    .template-desc { color: #374151; font-size: 0.93rem; margin-bottom: 12px; }
+    .template-uses { margin: 0; padding-left: 20px; font-size: 0.88rem; color: var(--muted); }
+    .template-uses li { margin-bottom: 4px; }
+    .template-setup { margin-top: 14px; padding: 12px 16px; background: #fafafa; border-radius: 8px; font-size: 0.85rem; color: #374151; border: 1px solid var(--border); }
+    .template-setup strong { color: var(--text); }
+
+    .tip-box { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 10px; padding: 16px 20px; margin: 24px 0; font-size: 0.9rem; }
+    .tip-box strong { color: #c2410c; }
+
+    .warning-box { background: #fef2f2; border: 1px solid #fecaca; border-radius: 10px; padding: 16px 20px; margin: 24px 0; font-size: 0.9rem; }
+    .warning-box strong { color: #991b1b; }
+
+    .cta-box { background: linear-gradient(135deg, #6c47ff 0%, #9b6fff 100%); border-radius: 16px; padding: 36px; text-align: center; color: white; margin: 48px 0; }
+    .cta-box h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 12px; }
+    .cta-box p { opacity: 0.9; margin-bottom: 24px; font-size: 0.95rem; }
+    .cta-btn { display: inline-block; background: white; color: var(--brand); font-weight: 700; padding: 14px 32px; border-radius: 10px; font-size: 1rem; }
+    .cta-btn:hover { opacity: 0.9; text-decoration: none; }
+
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.88rem; }
+    .comparison-table th { background: var(--brand); color: white; padding: 10px 14px; text-align: left; }
+    .comparison-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+    .comparison-table tr:nth-child(even) td { background: #f9fafb; }
+    .check { color: #059669; font-weight: 700; }
+    .cross { color: #dc2626; }
+
+    footer { text-align: center; padding: 32px; font-size: 0.82rem; color: var(--muted); border-top: 1px solid var(--border); }
+    footer a { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .template-header { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">PromptFlow</a>
+  <a class="nav-cta" href="/">See All Templates →</a>
+</nav>
+
+<div class="article-wrap">
+  <div class="breadcrumb"><a href="/">Home</a> · Free Resources · Notion Templates for Freelancers</div>
+
+  <h1>Best Notion Templates for Freelancers in 2026 (Free + Paid Guide)</h1>
+
+  <div class="meta">
+    <span>By PromptFlow</span>
+    <span>April 2026</span>
+    <span>7 min read</span>
+  </div>
+
+  <div class="intro">
+    Most freelancers waste 3-5 hours a week on admin work that Notion can handle in minutes — if you have the right template. This guide covers the 5 types of Notion templates every freelancer needs, what to look for in each, and how to avoid the common mistake of building a system so complex you never use it.
+  </div>
+
+  <p style="color:#374151; margin-bottom: 24px;">
+    If you're new to Notion, the blank-page problem is real. You spend 4 hours building a "system," use it for 3 days, then go back to a spreadsheet. The fix isn't more willpower — it's starting with a template that's already been stripped to what actually matters for freelancers.
+  </p>
+
+  <h2>The 5 Notion Templates Every Freelancer Actually Needs</h2>
+  <h3>And why most Notion systems fail before week 2</h3>
+
+  <div class="warning-box">
+    <strong>The #1 Notion mistake freelancers make:</strong> Building a complex system with 8 linked databases before you've done one real project in it. Start with the simplest template that solves your actual problem. Add complexity only after you've used it for 30 days.
+  </div>
+
+  <!-- TEMPLATE 1 -->
+  <div class="template-card">
+    <div class="template-header">
+      <div class="template-title">1. Client CRM + Project Tracker</div>
+      <div class="template-badge badge-paid">Most Important</div>
+    </div>
+    <div class="template-desc">
+      A combined client database and project tracker is the foundation of any freelance Notion setup. Without it, you're tracking clients in your head, projects in a spreadsheet, and invoices in your email. This template unifies all three.
+    </div>
+    <ul class="template-uses">
+      <li>Track every client: contact info, contract status, billing rate, relationship health</li>
+      <li>Link projects to clients so you always see what's active per client</li>
+      <li>See at a glance: which clients owe you money, which projects are overdue, who you haven't spoken to in 30+ days</li>
+      <li>Replace: sticky notes, messy spreadsheets, memory</li>
+    </ul>
+    <div class="template-setup">
+      <strong>What to look for:</strong> A good freelance CRM template has client status (prospect → active → inactive), a linked projects view, a simple invoice/payment tracker, and a notes field per client. Avoid templates with 10+ linked databases — you'll never maintain them.
+    </div>
+  </div>
+
+  <!-- TEMPLATE 2 -->
+  <div class="template-card">
+    <div class="template-header">
+      <div class="template-title">2. Daily + Weekly Task Dashboard</div>
+      <div class="template-badge badge-paid">High ROI</div>
+    </div>
+    <div class="template-desc">
+      Freelancers don't need a complicated GTD system. They need to know: what do I do today, what's due this week, and what's blocked? A well-designed Notion dashboard answers all three without requiring you to maintain 6 separate views.
+    </div>
+    <ul class="template-uses">
+      <li>Inbox for capturing everything without categorizing it first</li>
+      <li>Today view filtered to today's tasks only — no noise</li>
+      <li>Weekly project view so nothing slips between the cracks</li>
+      <li>Area/project grouping (client work, admin, personal)</li>
+    </ul>
+    <div class="template-setup">
+      <strong>What to look for:</strong> The best productivity dashboards are built around filtering, not organization. A task tagged "today" should automatically appear in your Today view — you shouldn't have to drag it there. Look for templates with smart filters, not complex hierarchies.
+    </div>
+  </div>
+
+  <!-- TEMPLATE 3 -->
+  <div class="template-card">
+    <div class="template-header">
+      <div class="template-title">3. Client Onboarding Template</div>
+      <div class="template-badge badge-free">Often Overlooked</div>
+    </div>
+    <div class="template-desc">
+      Your client onboarding experience is the first impression after the sale. A Notion-based onboarding checklist — one you duplicate for each new client — saves you 2+ hours per client and makes you look 10x more professional than freelancers who onboard via a messy email chain.
+    </div>
+    <ul class="template-uses">
+      <li>New client checklist: contract sent, invoice paid, kickoff call booked, access granted</li>
+      <li>Welcome kit template: what to send every new client (intro doc, process overview, communication preferences)</li>
+      <li>Intake form questions saved so you ask the same things every time</li>
+      <li>Kickoff meeting agenda template</li>
+    </ul>
+    <div class="template-setup">
+      <strong>How to use it:</strong> Duplicate the onboarding template for each new client. Work through the checklist. You'll never forget a step, and clients consistently mention the onboarding experience as a reason they refer others.
+    </div>
+  </div>
+
+  <!-- TEMPLATE 4 -->
+  <div class="template-card">
+    <div class="template-header">
+      <div class="template-title">4. Knowledge Base / Second Brain</div>
+      <div class="template-badge badge-free">Long-Term Value</div>
+    </div>
+    <div class="template-desc">
+      The "second brain" concept (popularized by Tiago Forte) is about capturing the ideas, notes, and reference material you'll actually use — and being able to find them when you need them. For freelancers, this means saved client research, process notes, content ideas, and lessons learned from past projects.
+    </div>
+    <ul class="template-uses">
+      <li>Capture notes from client calls, reading, and research</li>
+      <li>Tag by project, client, or topic for retrieval</li>
+      <li>Store SOPs and processes so you're not reinventing the wheel on every project</li>
+      <li>Content idea bank for pitching new clients or writing</li>
+    </ul>
+    <div class="template-setup">
+      <strong>Warning:</strong> Second brain templates are the easiest to over-engineer. If you spend more time organizing notes than doing work, the system has failed. Start with a simple inbox + a few tags. Add structure only when you feel friction.
+    </div>
+  </div>
+
+  <!-- TEMPLATE 5 -->
+  <div class="template-card">
+    <div class="template-header">
+      <div class="template-title">5. Freelance OS (All-in-One Dashboard)</div>
+      <div class="template-badge badge-paid">Best for Full-Time Freelancers</div>
+    </div>
+    <div class="template-desc">
+      If you're freelancing full-time, a unified "Freelance OS" that combines clients, projects, tasks, revenue tracking, and goals into one Notion workspace is worth setting up once. The key is finding one that's been designed for freelancers specifically — not a generic "life OS" template that requires 10 hours of customization.
+    </div>
+    <ul class="template-uses">
+      <li>Revenue tracker: monthly earnings, average project value, goal vs. actual</li>
+      <li>Pipeline: prospects → proposal sent → active → invoiced → paid</li>
+      <li>Time blocking / capacity view so you don't overbook yourself</li>
+      <li>Goals tracker tied to the revenue numbers</li>
+    </ul>
+    <div class="template-setup">
+      <strong>Who needs this:</strong> Full-time freelancers billing $3k+/month with 3+ active clients. Part-time freelancers with 1-2 clients don't need this level of system — start with just the CRM template (#1) and add from there.
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <h3>PromptFlow Notion Templates</h3>
+    <p>Our Notion templates are built specifically for freelancers — no bloated features, no week-long setup. Notion Freelancer OS, CRM + Client Tracker, Productivity Dashboard, and Second Brain 2026 are all available individually or in a bundle.</p>
+    <a class="cta-btn" href="/">See Notion Templates →</a>
+  </div>
+
+  <h2>Free vs. Paid Notion Templates: What's the Difference?</h2>
+  <h3>When to use a free template and when it's worth paying</h3>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Factor</th>
+        <th>Free Templates</th>
+        <th>Paid Templates ($10-30)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Complexity</td>
+        <td>Simple, limited</td>
+        <td>More complete systems</td>
+      </tr>
+      <tr>
+        <td>Documentation</td>
+        <td class="cross">Usually none</td>
+        <td class="check">Setup guide included</td>
+      </tr>
+      <tr>
+        <td>Customization</td>
+        <td>Requires DIY work</td>
+        <td class="check">Ready to use immediately</td>
+      </tr>
+      <tr>
+        <td>Time to set up</td>
+        <td>2-6 hours</td>
+        <td class="check">30-60 minutes</td>
+      </tr>
+      <tr>
+        <td>Best for</td>
+        <td>Experimenting</td>
+        <td class="check">Replacing a current system</td>
+      </tr>
+      <tr>
+        <td>Maintenance</td>
+        <td>You're on your own</td>
+        <td>Designed to stay clean</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="color:#374151; font-size: 0.93rem; margin-bottom: 24px;">
+    The math is simple: if a $17-27 Notion template saves you 4 hours of building + 2 hours/month of maintenance, the ROI is immediate. The real cost of a bad (or no) system is the mental overhead of tracking 5 clients and 12 projects in your head.
+  </p>
+
+  <h2>How to Set Up Your Freelance Notion System (Without Wasting a Weekend)</h2>
+  <h3>The right order to add templates</h3>
+
+  <div class="tip-box">
+    <strong>The 30-day rule:</strong> Use any new Notion template for 30 days before deciding whether to keep it, simplify it, or replace it. Most system failures happen because people rebuild before giving the system a real chance.
+  </div>
+
+  <p style="color:#374151; font-size: 0.93rem; margin-bottom: 16px;"><strong>Week 1:</strong> Set up the CRM only. Add every current client. Spend 10 minutes every Monday updating it.</p>
+  <p style="color:#374151; font-size: 0.93rem; margin-bottom: 16px;"><strong>Week 2:</strong> Add the task/productivity dashboard. Use it for one week before adding any complexity.</p>
+  <p style="color:#374151; font-size: 0.93rem; margin-bottom: 16px;"><strong>Week 3:</strong> Add the onboarding checklist when your next new client signs. Refine it based on the actual steps you take.</p>
+  <p style="color:#374151; font-size: 0.93rem; margin-bottom: 32px;"><strong>Month 2+:</strong> Add second brain and the full Freelancer OS once you know what you actually need.</p>
+
+  <div class="cta-box">
+    <h3>Start with the Notion Freelancer OS</h3>
+    <p>Combines clients, projects, tasks, and revenue tracking in one workspace. Built for freelancers billing $2k-10k/month. Set up in under an hour.</p>
+    <a class="cta-btn" href="/">See All Notion Templates →</a>
+  </div>
+
+  <h2 style="border:none; margin-top: 8px;">More Free Resources</h2>
+  <ul style="margin: 16px 0; padding-left: 24px; color: #374151; font-size: 0.95rem; line-height: 2;">
+    <li><a href="/prompts.html">25 Free ChatGPT Prompts for Business Owners</a></li>
+    <li><a href="/">PromptFlow — All Digital Products</a></li>
+  </ul>
+
+</div>
+
+<footer>
+  © 2026 PromptFlow. All rights reserved. · <a href="/">Home</a> · <a href="mailto:printpulsecreations2023@gmail.com">Contact</a>
+</footer>
+
+</body>
+</html>

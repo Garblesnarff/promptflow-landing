@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://garblesnarff.github.io/promptflow-landing/sitemap.xml
