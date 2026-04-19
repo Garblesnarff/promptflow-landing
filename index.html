@@ -676,6 +676,25 @@
   </div>
 </footer>
 
+<script>
+// On GitHub Pages (non-Netlify), intercept form submissions and show email fallback
+if (!document.cookie.includes('__netlify') && window.location.hostname !== 'localhost' && !window.location.hostname.includes('netlify')) {
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('form[data-netlify]').forEach(function(form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var email = form.querySelector('[type=email]').value;
+        var msg = document.createElement('p');
+        msg.style.cssText = 'color:#6c47ff;font-weight:600;font-size:1rem;margin-top:12px';
+        msg.textContent = 'Thanks! Email us at printpulsecreations2023@gmail.com with subject "Early Access" to join the list.';
+        form.parentNode.insertBefore(msg, form.nextSibling);
+        form.style.display = 'none';
+      });
+    });
+  });
+}
+</script>
+
 <!-- DEPLOY IN 60 SECONDS (no account required):
   1. Go to: netlify.com/drop
   2. Drag the entire "landing-page" folder onto the page
