@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>20 Free ChatGPT Prompts for Marketers (Ads, Email, Social, SEO) 2026</title>
+  <meta name="description" content="20 free ChatGPT prompts for marketing professionals — ad copy, email campaigns, social media, SEO content, and brand voice. Copy-paste ready. Works with ChatGPT, Claude, and Gemini." />
+  <meta property="og:title" content="20 Free ChatGPT Prompts for Marketers (2026)" />
+  <meta property="og:description" content="Stop writing marketing copy from scratch. These 20 prompts cover every channel: ads, email, social, SEO, and brand voice. Copy-paste into ChatGPT and get a usable draft in under 2 minutes." />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://garblesnarff.github.io/promptflow-landing/marketing-prompts.html" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #6c47ff;
+      --brand-dark: #5535e0;
+      --text: #1a1a2e;
+      --muted: #6b7280;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --border: #e5e7eb;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--text); background: var(--bg); line-height: 1.7; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav { background: white; border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-weight: 800; font-size: 1.1rem; color: var(--brand); letter-spacing: -0.5px; }
+    .nav-cta { background: var(--brand); color: white; padding: 8px 18px; border-radius: 8px; font-size: 0.85rem; font-weight: 600; }
+    .nav-cta:hover { background: var(--brand-dark); text-decoration: none; }
+
+    .article-wrap { max-width: 740px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    .breadcrumb { font-size: 0.82rem; color: var(--muted); margin-bottom: 24px; }
+    .breadcrumb a { color: var(--muted); }
+
+    h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.5px; margin-bottom: 16px; }
+    .meta { color: var(--muted); font-size: 0.88rem; margin-bottom: 32px; display: flex; gap: 16px; flex-wrap: wrap; }
+    .meta span::before { content: "· "; }
+    .meta span:first-child::before { content: ""; }
+
+    .intro { font-size: 1.05rem; color: #374151; margin-bottom: 36px; padding: 20px 24px; background: #f0ebff; border-left: 4px solid var(--brand); border-radius: 0 8px 8px 0; }
+
+    h2 { font-size: 1.25rem; font-weight: 700; margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--border); }
+    h2 .cat-icon { margin-right: 8px; }
+
+    .prompt-list { display: flex; flex-direction: column; gap: 16px; }
+    .prompt-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .prompt-number { font-size: 0.75rem; font-weight: 700; color: var(--brand); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+    .prompt-label { font-size: 0.88rem; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+    .prompt-text { font-family: "SF Mono", "Fira Code", monospace; font-size: 0.87rem; background: #f8f7ff; border: 1px solid #e0d9ff; border-radius: 8px; padding: 14px 16px; color: #2d2060; line-height: 1.6; margin-bottom: 8px; white-space: pre-wrap; }
+    .prompt-why { font-size: 0.84rem; color: var(--muted); }
+
+    .framework-box { background: #f0ebff; border: 1px solid #c4b5fd; border-radius: 10px; padding: 16px 20px; margin: 24px 0; font-size: 0.9rem; }
+    .framework-box strong { color: var(--brand); }
+
+    .cta-box { background: linear-gradient(135deg, #6c47ff 0%, #9b6fff 100%); border-radius: 16px; padding: 36px; text-align: center; color: white; margin: 48px 0; }
+    .cta-box h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 12px; }
+    .cta-box p { opacity: 0.9; margin-bottom: 24px; font-size: 0.95rem; }
+    .cta-btn { display: inline-block; background: white; color: var(--brand); font-weight: 700; padding: 14px 32px; border-radius: 10px; font-size: 1rem; }
+    .cta-btn:hover { opacity: 0.9; text-decoration: none; }
+
+    .tip-box { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 10px; padding: 16px 20px; margin: 24px 0; font-size: 0.9rem; }
+
+    .related-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 40px 0; }
+    .related-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .related-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+    .related-card p { font-size: 0.84rem; color: var(--muted); margin-bottom: 12px; }
+    .related-card a { font-size: 0.85rem; font-weight: 600; color: var(--brand); }
+
+    footer { background: white; border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; font-size: 0.84rem; color: var(--muted); }
+    footer a { color: var(--muted); margin: 0 8px; }
+    footer a:hover { color: var(--brand); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="./index.html">PromptFlow</a>
+  <a class="nav-cta" href="./index.html">Browse All Products →</a>
+</nav>
+
+<div class="article-wrap">
+
+  <div class="breadcrumb">
+    <a href="./index.html">PromptFlow</a> / Free Resources / ChatGPT Prompts for Marketers
+  </div>
+
+  <h1>20 Free ChatGPT Prompts for Marketers (Ads, Email, Social, SEO)</h1>
+
+  <div class="meta">
+    <span>PromptFlow</span>
+    <span>Updated April 2026</span>
+    <span>20 copy-paste prompts</span>
+    <span>Free — no email required</span>
+  </div>
+
+  <div class="intro">
+    Generic prompts get generic copy. These 20 don't. Each one is built around a specific marketing task — with the context, format, and constraints already written in — so you get a usable first draft instead of a starting point you still have to build from scratch. Works with ChatGPT 4, Claude, and Gemini.
+  </div>
+
+  <div class="tip-box">
+    <strong>How to use these:</strong> Replace everything in [brackets] with your specifics before sending. The more specific you are with the [context], the better the output. These prompts include the structure — you supply the details.
+  </div>
+
+  <!-- ================================================ -->
+  <h2><span class="cat-icon">📣</span>Ad Copy Prompts</h2>
+
+  <div class="prompt-list">
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 1</div>
+      <div class="prompt-label">Facebook/Instagram Ad — AIDA Framework</div>
+      <div class="prompt-text">Write a Facebook ad for [PRODUCT/SERVICE] targeting [TARGET AUDIENCE: e.g., female entrepreneurs aged 28-45 interested in productivity]. Use the AIDA framework: Attention (hook that names their specific problem), Interest (why this solution is different), Desire (specific outcome they'll get), Action (CTA). Keep the body copy under 125 words. Headline under 40 characters. CTA button text: [e.g., Shop Now / Learn More / Get Started].</div>
+      <div class="prompt-why">Why it works: AIDA is the most tested direct-response framework. Specifying the audience and character limits forces output that's actually usable, not editorial.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 2</div>
+      <div class="prompt-label">Google Search Ad — 3 Headlines + 2 Descriptions</div>
+      <div class="prompt-text">Write Google Search ad copy for [PRODUCT/SERVICE]. Target keyword: "[KEYWORD]". Write 3 headlines (max 30 characters each) that include the keyword and emphasize different angles: (1) problem-focused, (2) benefit-focused, (3) urgency or social proof. Write 2 descriptions (max 90 characters each): the first should expand on the main benefit, the second should have a clear CTA. Do not exceed the character limits.</div>
+      <div class="prompt-why">Why it works: Google RSAs test headline combinations automatically. Giving three distinct angles maximizes variation and performance data.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 3</div>
+      <div class="prompt-label">Ad Copy Variations — A/B Testing Set</div>
+      <div class="prompt-text">Write 3 variations of ad copy for [PRODUCT/SERVICE] targeting [AUDIENCE]. Each variation should test a different hook angle: Version A — lead with the problem ("[PAIN POINT]"). Version B — lead with the outcome ("[DESIRED RESULT]"). Version C — lead with social proof or a surprising number ("[STAT or CLAIM]"). Keep each version under 100 words. Same CTA for all three: [CTA TEXT].</div>
+      <div class="prompt-why">Why it works: Testing one variable (hook angle) while keeping everything else constant gives you real conversion data, not opinion.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 4</div>
+      <div class="prompt-label">Retargeting Ad — "You Visited, Here's Why to Come Back"</div>
+      <div class="prompt-text">Write a retargeting ad for [PRODUCT/SERVICE] for people who visited [PAGE/SITE] but didn't purchase. Acknowledge they've seen it before without being creepy. Address the most likely objection: [OBJECTION — e.g., price, not sure if right for me, forgot about it]. Offer a reason to return: [INCENTIVE — e.g., limited stock, customer reviews, free trial]. Max 80 words body copy. CTA: [CTA TEXT].</div>
+      <div class="prompt-why">Why it works: Retargeting copy should reference the prior visit and handle the specific objection that stopped the first conversion.</div>
+    </div>
+
+  </div>
+
+  <!-- ================================================ -->
+  <h2><span class="cat-icon">📧</span>Email Marketing Prompts</h2>
+
+  <div class="prompt-list">
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 5</div>
+      <div class="prompt-label">Subject Line — 5 Variations to A/B Test</div>
+      <div class="prompt-text">Write 5 email subject lines for an email about [TOPIC/OFFER] going to [AUDIENCE]. Write one of each type: (1) Curiosity gap — incomplete information that demands opening. (2) Specificity — a number or specific detail. (3) Direct benefit — what they get. (4) Personal/conversational — sounds like it's from a real person. (5) Urgency — time or scarcity. Under 50 characters each. No all-caps. No spam trigger words.</div>
+      <div class="prompt-why">Why it works: Testing subject line angles in batches reveals which style resonates with your specific list. Most marketers A/B test two — testing five gives 5× the learning.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 6</div>
+      <div class="prompt-label">Promotional Email — Product Launch or Sale</div>
+      <div class="prompt-text">Write a promotional email announcing [PRODUCT/OFFER] to [AUDIENCE SEGMENT]. Structure: (1) Subject line — curiosity or direct benefit. (2) Opening sentence — one sentence that earns the next read. (3) The offer — what it is, the price, what they get. (4) Three specific benefits — not features, outcomes the reader will experience. (5) Urgency — why act now. (6) CTA — one link, one action. Max 250 words total. Tone: [e.g., direct and conversational / professional / enthusiastic].</div>
+      <div class="prompt-why">Why it works: Structured briefing prevents the AI from writing a meandering email. The constraint of one CTA forces clarity.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 7</div>
+      <div class="prompt-label">Re-Engagement Email — Win Back Inactive Subscribers</div>
+      <div class="prompt-text">Write a re-engagement email for subscribers who haven't opened in [TIMEFRAME — e.g., 90 days]. Don't be passive-aggressive. Acknowledge the silence without apology. Offer something worth opening: [VALUE — e.g., a free resource, an update, a discount]. Include one clear question or CTA that requires minimal effort to respond to. Subject line should acknowledge the gap honestly. Max 150 words.</div>
+      <div class="prompt-why">Why it works: Re-engagement emails that acknowledge the silence and deliver immediate value have 2-3× the click rate of generic "we miss you" emails.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 8</div>
+      <div class="prompt-label">Email Nurture Sequence — 3-Part Mini Series</div>
+      <div class="prompt-text">Write a 3-email nurture sequence for [AUDIENCE] who downloaded [LEAD MAGNET] and haven't purchased [PRODUCT]. Email 1 (Day 1): Deliver the promised value + one useful tip they didn't expect. Email 2 (Day 3): Share a problem case study or before/after example relevant to [TARGET OUTCOME]. Email 3 (Day 7): Make the ask — introduce [PRODUCT], explain how it gets them from where they are to [DESIRED OUTCOME]. CTA in Email 3 only. Under 200 words per email.</div>
+      <div class="prompt-why">Why it works: Three-email sequences that lead with value before asking consistently outperform single-pitch emails. The progression earns the ask.</div>
+    </div>
+
+  </div>
+
+  <!-- CTA Box 1 -->
+  <div class="cta-box">
+    <h3>Need More Than 20 Prompts?</h3>
+    <p>The ChatGPT Prompts for Marketers pack has 70 expert-engineered prompts covering every marketing channel — ads, email, social, SEO, brand voice, and campaign planning. Built around AIDA, PAS, and FAB frameworks. One download, use forever.</p>
+    <a class="cta-btn" href="https://promptflowhq.gumroad.com/l/chatgpt-prompts-marketers?utm_source=landing&utm_medium=resource-page&utm_campaign=marketing-prompts-cta-1">Get 70 Marketing Prompts — $17 →</a>
+  </div>
+
+  <!-- ================================================ -->
+  <h2><span class="cat-icon">📱</span>Social Media Prompts</h2>
+
+  <div class="prompt-list">
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 9</div>
+      <div class="prompt-label">LinkedIn Post — Thought Leadership</div>
+      <div class="prompt-text">Write a LinkedIn post about [TOPIC/LESSON/OPINION] in my voice. Context about me: [YOUR ROLE, EXPERIENCE, PERSPECTIVE]. The post should: (1) Open with a counterintuitive statement or surprising observation — no generic hooks. (2) Share a specific insight or lesson, not general advice. (3) End with a question or reflection that invites comments. Target length: 150-200 words. No bullet points. Write in first person. No corporate jargon.</div>
+      <div class="prompt-why">Why it works: LinkedIn's algorithm rewards native long-form text with high dwell time. Counterintuitive openings stop the scroll. A question at the end drives comments, which expands reach.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 10</div>
+      <div class="prompt-label">Instagram Caption — Carousel or Single Image</div>
+      <div class="prompt-text">Write an Instagram caption for a [CAROUSEL/SINGLE IMAGE] post about [TOPIC] for [AUDIENCE — e.g., freelancers, small business owners]. Hook (first line, under 125 characters — this is what shows before "more"): [one-line version of the main insight or an intriguing question]. Body: 3-4 short paragraphs expanding the insight. CTA: Ask a specific question or direct to the link in bio. Add 5-8 relevant hashtags at the end. Tone: [conversational / educational / motivational].</div>
+      <div class="prompt-why">Why it works: Instagram shows only the first 125 characters before "more." The hook is everything — it determines whether anyone reads the rest.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 11</div>
+      <div class="prompt-label">Twitter/X Thread — Educational Breakdown</div>
+      <div class="prompt-text">Write a Twitter/X thread about [TOPIC] that educates [AUDIENCE] on [SPECIFIC SKILL OR CONCEPT]. Structure: Tweet 1 — hook that promises a specific outcome from reading the thread. Tweets 2-8 — one insight or step per tweet, each under 280 characters, each able to stand alone. Tweet 9 — summary of the key takeaway. Tweet 10 — CTA (follow for more / link to [RESOURCE]). No filler tweets. No "RT if you agree." Start every tweet with a strong opening word, not "I" or "The."</div>
+      <div class="prompt-why">Why it works: Threads that teach a specific skill perform best on X. The "each tweet stands alone" constraint prevents filler padding that kills retention.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 12</div>
+      <div class="prompt-label">Social Media Content Calendar — One Week</div>
+      <div class="prompt-text">Create a 5-post social media content calendar for [PLATFORM — e.g., LinkedIn / Instagram] for a [BUSINESS TYPE] targeting [AUDIENCE]. Content pillars: [PILLAR 1 — e.g., educational], [PILLAR 2 — e.g., behind-the-scenes], [PILLAR 3 — e.g., promotional]. For each post: day, pillar, topic, hook (first line), post format (text/image/carousel/video), and CTA. Use a 3:1:1 ratio: 3 educational, 1 promotional, 1 personal/engagement post. Include the actual caption for each post.</div>
+      <div class="prompt-why">Why it works: Planning a full week at once with defined pillars prevents the daily "what should I post?" decision that stalls most marketers.</div>
+    </div>
+
+  </div>
+
+  <!-- ================================================ -->
+  <h2><span class="cat-icon">🔍</span>SEO Content Prompts</h2>
+
+  <div class="prompt-list">
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 13</div>
+      <div class="prompt-label">Blog Post Outline — Long-Form SEO Article</div>
+      <div class="prompt-text">Create a detailed outline for a 1,500-word SEO blog post targeting the keyword "[TARGET KEYWORD]". The reader is [AUDIENCE — e.g., small business owners unfamiliar with SEO]. Include: (1) H1 title with keyword in first 60 characters. (2) Meta description under 155 characters with keyword. (3) Introduction structure (hook → problem → what this post covers). (4) 4-6 H2 sections with subheadings. (5) FAQ section with 3 questions Google likely shows in People Also Ask. (6) Conclusion + CTA. Each section should have a 2-sentence description of what to cover.</div>
+      <div class="prompt-why">Why it works: An outline from a well-briefed AI takes 5 minutes and saves 30 minutes of structural thinking. The FAQ section targets Google's People Also Ask box directly.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 14</div>
+      <div class="prompt-label">Meta Descriptions — Batch of 5</div>
+      <div class="prompt-text">Write meta descriptions for these 5 pages on my website: [LIST 5 PAGE TITLES AND THEIR PRIMARY KEYWORDS]. For each, write a meta description under 155 characters that: includes the primary keyword naturally, communicates the page's unique value, and ends with a call to action or benefit. Do not start any with "Welcome to" or "This page is about." Write them to be clicked, not just indexed.</div>
+      <div class="prompt-why">Why it works: Meta descriptions don't directly affect rankings but dramatically affect click-through rate from search results. Treating them as ad copy instead of summaries doubles CTR.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 15</div>
+      <div class="prompt-label">Product Description — SEO-Optimized for E-Commerce</div>
+      <div class="prompt-text">Write an SEO product description for [PRODUCT NAME] targeting the keyword "[TARGET KEYWORD]". Audience: [BUYER PERSONA — who buys this and why]. Structure: (1) Opening sentence — one line that names the problem this product solves. (2) 3 bullet points — key features as benefits (what they mean for the buyer, not what they are). (3) One paragraph on who it's for and why it works. (4) CTA. Include the target keyword in the first 100 characters. Total length: 150-200 words. Do not use any of these filler phrases: "game-changer," "revolutionary," "cutting-edge."</div>
+      <div class="prompt-why">Why it works: Banning specific filler phrases is the single fastest way to improve AI-generated product copy quality. The benefit-framing instruction converts better than feature lists.</div>
+    </div>
+
+  </div>
+
+  <!-- ================================================ -->
+  <h2><span class="cat-icon">🎯</span>Brand Voice & Copy Prompts</h2>
+
+  <div class="prompt-list">
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 16</div>
+      <div class="prompt-label">Brand Voice Guide — Define Your Tone</div>
+      <div class="prompt-text">Create a concise brand voice guide for [BRAND NAME], a [BUSINESS TYPE] targeting [AUDIENCE]. Based on these 3 words I'd use to describe my brand: [WORD 1], [WORD 2], [WORD 3] — write: (1) A 2-sentence brand voice summary. (2) Three "we sound like / we don't sound like" contrasts. (3) A list of 10 words we use and 10 we avoid. (4) One example sentence showing our voice in action for: a product description, a social post, and a customer email. Format as a document my whole team can follow.</div>
+      <div class="prompt-why">Why it works: A brand voice guide built in 15 minutes is infinitely more useful than no guide. The "we sound like / don't sound like" format is the fastest way to make tone concrete.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 17</div>
+      <div class="prompt-label">Rewrite for Brand Voice — Fix AI-Sounding Copy</div>
+      <div class="prompt-text">Rewrite the following copy to match this brand voice: [3-WORD BRAND DESCRIPTION — e.g., direct, human, confident]. Remove any phrases that sound like they were written by AI: "delve into," "in today's fast-paced world," "it's worth noting," "game-changer," "leverage," "utilize." Replace passive constructions with active ones. Shorten any sentence over 20 words. The goal is copy that sounds like a smart human wrote it on purpose — not copy that sounds like it was generated. [PASTE COPY TO REWRITE HERE]</div>
+      <div class="prompt-why">Why it works: This prompt is the fastest way to rescue AI-generated first drafts. The specific banned-phrases list does more work than any general "make it sound human" instruction.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 18</div>
+      <div class="prompt-label">Landing Page Headline — 10 Variations</div>
+      <div class="prompt-text">Write 10 landing page headline variations for [PRODUCT/SERVICE] targeting [AUDIENCE]. The main benefit: [BENEFIT]. The main problem it solves: [PROBLEM]. Write two of each type: (1) Problem-focused — names the pain. (2) Benefit-focused — promises the outcome. (3) How-to — implies a method or shortcut. (4) Question — creates a "yes" response. (5) Contrarian — challenges a common belief. Under 10 words each where possible. Do not use the word "transform."</div>
+      <div class="prompt-why">Why it works: 10 variations across 5 angles surfaces options a single prompt never would. Landing page headline is the highest-leverage copywriting decision — worth spending 10 minutes on variations.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 19</div>
+      <div class="prompt-label">Customer Testimonial Request — Email + Follow-Up</div>
+      <div class="prompt-text">Write two emails: (1) A post-purchase email asking [CUSTOMER TYPE] for a review/testimonial. Send [TIMEFRAME — e.g., 7 days] after purchase. Make it feel personal, not automated. Ask one specific question: "What was the moment you realized [PRODUCT] was working for you?" rather than "How are you enjoying the product?" Under 100 words. (2) A 7-day follow-up if no response — shorter, lower friction. Both emails should make the ask feel easy and genuinely valuable to them to answer.</div>
+      <div class="prompt-why">Why it works: Specific questions get specific testimonials. "What was the moment..." produces a story. "How are you enjoying it?" produces a rating.</div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-number">Prompt 20</div>
+      <div class="prompt-label">Objection Handler — Copy That Addresses the "No"</div>
+      <div class="prompt-text">Write copy that handles the top 3 objections for [PRODUCT/SERVICE]. The objections are: (1) [OBJECTION 1 — e.g., "It's too expensive"]. (2) [OBJECTION 2 — e.g., "I don't have time to implement this"]. (3) [OBJECTION 3 — e.g., "I've tried tools like this before and they didn't work"]. For each: one paragraph (3-4 sentences) that acknowledges the concern, reframes it, and ends with a response that doesn't feel defensive. Use for FAQ sections, sales pages, or ad copy.</div>
+      <div class="prompt-why">Why it works: Objection copy on a sales page removes the friction that stops purchases. Acknowledging concerns builds trust faster than ignoring them.</div>
+    </div>
+
+  </div>
+
+  <!-- Framework callout -->
+  <div class="framework-box">
+    <strong>The 3-Part Prompt Framework Behind All 20 Prompts</strong><br><br>
+    Every prompt above follows the same structure: <strong>Context</strong> (who you are, who the reader is) → <strong>Output format</strong> (exactly what you want) → <strong>Constraints</strong> (character limits, banned phrases, required elements). Without all three, ChatGPT defaults to its average — which is generic. With all three, it produces first drafts you can actually use.
+  </div>
+
+  <!-- CTA Box 2 -->
+  <div class="cta-box">
+    <h3>70 Marketing Prompts — All Channels, All Frameworks</h3>
+    <p>These 20 prompts are a sample. The full ChatGPT Prompts for Marketers pack has 70 expert-engineered prompts covering ads, email campaigns, social media strategy, SEO content, brand voice, market research, and campaign planning. Organized by channel. Built around AIDA, PAS, and FAB. $17 — instant digital download.</p>
+    <a class="cta-btn" href="https://promptflowhq.gumroad.com/l/chatgpt-prompts-marketers?utm_source=landing&utm_medium=resource-page&utm_campaign=marketing-prompts-cta-2">Get 70 Marketing Prompts — $17 →</a>
+  </div>
+
+  <!-- Also consider -->
+  <h2>Also in the PromptFlow Collection</h2>
+  <div class="related-links">
+    <div class="related-card">
+      <h4>AI Copywriting Masterpack</h4>
+      <p>45 prompts organized by framework: AIDA, PAS, FAB, storytelling, and objection handling. For copywriters and content teams.</p>
+      <a href="https://promptflowhq.gumroad.com/l/ai-copywriting-masterpack?utm_source=landing&utm_medium=resource-page&utm_campaign=marketing-related">View product — $22 →</a>
+    </div>
+    <div class="related-card">
+      <h4>90-Day AI Content Calendar</h4>
+      <p>Plan an entire quarter of content in one sitting. 200 AI prompts for captions, hooks, carousels, and video scripts across all platforms.</p>
+      <a href="https://promptflowhq.gumroad.com/l/ai-content-calendar-bundle?utm_source=landing&utm_medium=resource-page&utm_campaign=marketing-related">View product — $22 →</a>
+    </div>
+    <div class="related-card">
+      <h4>ChatGPT Business Prompts 500</h4>
+      <p>500 prompts across 14 business functions. Covers marketing, sales, operations, hiring, finance, and more — the complete business toolkit.</p>
+      <a href="https://promptflowhq.gumroad.com/l/chatgpt-business-prompts-500?utm_source=landing&utm_medium=resource-page&utm_campaign=marketing-related">View product — $27 →</a>
+    </div>
+  </div>
+
+  <!-- Internal links -->
+  <p style="font-size:0.9rem; color: var(--muted); margin-top: 24px;">
+    More free resources: <a href="./prompts.html">25 ChatGPT Prompts for Business Owners</a> · <a href="./notion-templates.html">Notion Templates for Freelancers Guide</a> · <a href="./index.html">Browse All PromptFlow Products</a>
+  </p>
+
+</div>
+
+<footer>
+  <p>© 2026 PromptFlow · <a href="./index.html">Home</a> · <a href="./prompts.html">Free Business Prompts</a> · <a href="./notion-templates.html">Notion Templates Guide</a></p>
+</footer>
+
+</body>
+</html>
