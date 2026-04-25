@@ -142,4 +142,52 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- New product pages — added 2026-04-23 -->
+  <url>
+    <loc>https://garblesnarff.github.io/promptflow-landing/product-chatgpt-prompts-coaches.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://garblesnarff.github.io/promptflow-landing/product-ai-hr-hiring-toolkit.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- New resource pages — added 2026-04-24 -->
+  <url>
+    <loc>https://garblesnarff.github.io/promptflow-landing/chatgpt-prompts-students.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://garblesnarff.github.io/promptflow-landing/chatgpt-prompts-youtube-creators.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://garblesnarff.github.io/promptflow-landing/chatgpt-prompts-job-seekers.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://garblesnarff.github.io/promptflow-landing/chatgpt-prompts-teachers.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://garblesnarff.github.io/promptflow-landing/chatgpt-prompts-productivity.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://garblesnarff.github.io/promptflow-landing/chatgpt-prompts-small-business.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Pillar page — high priority for broad keyword targeting -->
+  <url>
+    <loc>https://garblesnarff.github.io/promptflow-landing/free-chatgpt-prompts.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
